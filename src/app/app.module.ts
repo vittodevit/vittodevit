@@ -6,7 +6,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MieiprogettiComponent } from './mieiprogetti/mieiprogetti.component';
 import { FooterComponent } from './footer/footer.component';
-import { SudimeOldComponent } from './sudime-old/sudime-old.component';
 import { FeaturettePresentazioneComponent } from './featurette-presentazione/featurette-presentazione.component';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { FeaturettePresentazioneComponent } from './featurette-presentazione/fea
     CarouselComponent,
     MieiprogettiComponent,
     FooterComponent,
-    SudimeOldComponent,
     FeaturettePresentazioneComponent
   ],
   imports: [

@@ -241,7 +241,7 @@ html{
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 27rem;
+    height: 24rem;
     background-color: #777;
 }
 .carousel-item > img {
