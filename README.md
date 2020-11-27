@@ -1,1 +1,1 @@
-[![GitHub metrics](https://metrics.lecoq.io/mrBackSlash-it?pagespeed=1&languages=1&followup=1&isocalendar=1)](https://metrics.lecoq.io/mrBackSlash-it?pagespeed=1&languages=1&followup=1&isocalendar=1)
+[![GitHub metrics](https://raw.githubusercontent.com/mrBackSlash-it/mrBackSlash-it/main/github-metrics.svg)](https://raw.githubusercontent.com/mrBackSlash-it/mrBackSlash-it/main/github-metrics.svg)
