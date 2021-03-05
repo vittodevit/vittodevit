@@ -1,3 +1,4 @@
+//this is to avoid spambot
 var efh38f834y5 = 
 ["dml0dG9yaW9AbX",
 "JiYWNrc2xhc2guaXQ",
@@ -26,3 +27,10 @@ document.getElementById("campomail").href = grit0459utj54[1];
 document.getElementById("campomail").innerText = grit0459utj54[0];
 document.getElementById("campotelegram").href = grit0459utj54[3];
 document.getElementById("campotelegram").innerText = grit0459utj54[2];
+
+var typed = new Typed('#testoscritto', {
+    strings: ["uno sviluppatore.", "un appassionato di informatica.", "un system administrator.", "assetato di conoscenza."],
+    typeSpeed: 55,
+    backSpeed: 30,
+    loop: true
+  });

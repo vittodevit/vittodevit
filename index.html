@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description"
-        content="Ciao! Mi chiamo Vittorio, ho 15 anni e la mia più grande passione è l'informata. Portfolio personale ed altre risorse!">
+        content="Ciao! Mi chiamo Vittorio, ho 15 anni e la mia più grande passione è l'informatica. Portfolio personale, competenze, progetti, certificazioni ed altre risorse!">
     <meta name="keywords"
         content="Vittorio, Lo, Mele, MrBackSlash, mr, back, slash, programmazione, programming, software, engineering, cad, Vittorio Lo Mele">
     <meta name="author" content="Vittorio Lo Mele">
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="https://mrbackslash.it/assets/logo.webp" width="30" height="30"
+                <img src="static/img/logo.webp" width="30" height="30"
                     class="d-inline-block align-top" alt="" loading="lazy">
                 mrBackslash
             </a>
@@ -45,14 +45,16 @@
 
     <section class="py-5 text-center container-fluid ide-bg">
         <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
+            <div class="col-lg-6 col-md-8 mx-auto h-100">
                 <h2 class="fw-light text-var">
                     <span class="tag-color">$name</span> <span class="comma">=</span> "Ciao! Sono Vittorio Lo
                     Mele."<span class="comma">;</span>
                 </h2>
                 <h2 class="fw-light text-var">
-                    <span class="tag-color">$info</span> <span class="comma">=</span> "Sono uno sviluppatore."<span
-                        class="comma">;</span>
+                    <span class="tag-color">$info</span> <span class="comma">=</span> "Sono <span id="testoscritto"></span>"<span class="comma">;</span>
+                </h2>
+                <h2 class="fw-light text-var comma">
+                    <span class="tag-color">$code</span> = makeCode(<span class="tag-color">$coffee</span>, <span class="tag-color">$time</span>);
                 </h2>
             </div>
         </div>
@@ -66,7 +68,7 @@
                 <p class="lead text-muted">Vari progetti open source realizzati nel corso del tempo, ecco quelli in
                     evidenza!</p>
                 <p>
-                    <a href="progetti/" class="btn btn-primary my-2">Visualizza tutti</a>
+                    <a href="gallery/" class="btn btn-primary my-2">Visualizza tutti</a>
                     <a href="https://github.com/mrBackSlash-it" class="btn btn-secondary my-2">Profilo GitHub</a>
                 </p>
             </div>
@@ -331,7 +333,7 @@
                 <h1 class="fw-light">Certificazioni</h1>
                 <p class="lead text-muted">Tutte le certificazioni ed attestati che ho acquisito nel tempo.</p>
                 <p>
-                    <a href="progetti/" class="btn btn-primary my-2">Visualizza tutti</a>
+                    <a href="gallery/" class="btn btn-primary my-2">Visualizza tutti</a>
                 </p>
             </div>
         </div>
@@ -400,7 +402,6 @@
             </div>
         </div>
     </section>
-
     <div class="container text-center">
         <p>&copy; Vittorio Lo Mele 2021, sito web realizzato da Vittorio Lo Mele. <a
                 href="https://github.com/mrBackSlash-it/mrBackSlash-it">Sorgente Sito</a></p>
@@ -412,9 +413,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous"></script>
     <script src="static/js/lightbox.min.js"></script>
-
     <script src="static/js/revealinfo.js"></script>
 </body>
 
