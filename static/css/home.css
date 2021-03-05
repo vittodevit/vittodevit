@@ -1,0 +1,44 @@
+.thicc{
+    height: 20px;
+}
+
+.comp-base{
+    background-color: green;
+}
+
+.comp-medie{
+    background-color: goldenrod;
+}
+
+.comp-avanzate{
+    background-color: red;
+}
+
+.spaziobarre{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spacer-m{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ide-bg{
+    background-color: #191919;
+}
+
+.tag-color{
+    color: #8ed4ff;
+}
+
+.text-var{
+    color: #c17d64;
+    font-family: 'Consolas';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.comma{
+    color: azure;
+}
