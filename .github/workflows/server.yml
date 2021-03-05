@@ -1,0 +1,17 @@
+on: [push]
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy files to production
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: ${{ secrets.USERNAME }}
+          server: ${{ secrets.IP_ADDRESS }}
+          ssh_private_key: ${{ secrets.SSH_PPK }} 
+          local_path: './*'
+          remote_path: '/var/www/mrbackslash.it/public-html'
+          args: '-o ConnectTimeout=5'
