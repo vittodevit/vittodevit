@@ -14,12 +14,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/css/lightbox.css" rel="stylesheet">
+    <link href="static/css/font.css" rel="stylesheet">
     <link href="static/css/home.css" rel="stylesheet">
     <link href="static/css/scrollbar.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -41,7 +42,22 @@
             </div>
         </div>
     </nav>
-    <!-- SEZIONE PROGETTI IN EVIDENZA -->
+
+    <section class="py-5 text-center container-fluid ide-bg">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h2 class="fw-light text-var">
+                    <span class="tag-color">$name</span> <span class="comma">=</span> "Ciao! Sono Vittorio Lo
+                    Mele."<span class="comma">;</span>
+                </h2>
+                <h2 class="fw-light text-var">
+                    <span class="tag-color">$info</span> <span class="comma">=</span> "Sono uno sviluppatore."<span
+                        class="comma">;</span>
+                </h2>
+            </div>
+        </div>
+    </section>
+
     <a name="progetti"></a>
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
@@ -126,7 +142,6 @@
         </div>
     </div>
 
-    <!-- SEZ. COMPETENZE -->
     <a name="competenze"></a>
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
@@ -301,6 +316,7 @@
                                 <div class="progress-bar comp-base" role="progressbar" style="width: 33%;"
                                     aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Base</div>
                             </div>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -308,7 +324,6 @@
         </div>
     </div>
 
-    <!-- SEZIONE CERTIFICAZIONI -->
     <a name="certificazioni"></a>
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
@@ -334,7 +349,7 @@
                                 <strong>Cisco Get Connected</strong>
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://github.com/mrBackSlash-it/orarioweb"
+                                <a href="static/img/getconnected.jpg" data-lightbox="getconn"
                                     class="btn btn-sm btn-outline-secondary">Visualizza</a>
                             </div>
                         </div>
@@ -349,7 +364,7 @@
                                 <strong>NDG Linux Unhatched</strong>
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://github.com/mrBackSlash-it/orarioweb"
+                                <a href="static/img/unhatched.jpg" data-lightbox="unhatched"
                                     class="btn btn-sm btn-outline-secondary">Visualizza</a>
                             </div>
                         </div>
@@ -364,7 +379,7 @@
                                 <strong>MASTERING.IT Audio Labs</strong>
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <a href="https://github.com/mrBackSlash-it/orarioweb"
+                                <a href="static/img/mial.jpeg" data-lightbox="mastering"
                                     class="btn btn-sm btn-outline-secondary">Visualizza</a>
                             </div>
                         </div>
@@ -374,10 +389,33 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    <a name="contatti"></a>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Contatti</h1>
+                <br>
+                <p><i class="bi bi-envelope"></i> <a id="campomail" href="">mail</a> <span class="spacer-m"> </span><i
+                        class="bi bi-telegram"></i> <a id="campotelegram" href="">telegram</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container text-center">
+        <p>&copy; Vittorio Lo Mele 2021, sito web realizzato da Vittorio Lo Mele. <a
+                href="https://github.com/mrBackSlash-it/mrBackSlash-it">Sorgente Sito</a></p>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="static/js/lightbox.min.js"></script>
+
+    <script src="static/js/revealinfo.js"></script>
 </body>
 
 </html>
