@@ -1,0 +1,20 @@
+.thicc{
+    height: 20px;
+}
+
+.comp-base{
+    background-color: green;
+}
+
+.comp-medie{
+    background-color: goldenrod;
+}
+
+.comp-avanzate{
+    background-color: red;
+}
+
+.spaziobarre{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
