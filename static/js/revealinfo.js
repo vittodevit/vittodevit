@@ -29,7 +29,7 @@ document.getElementById("campotelegram").href = grit0459utj54[3];
 document.getElementById("campotelegram").innerText = grit0459utj54[2];
 
 var typed = new Typed('#testoscritto', {
-    strings: ["uno sviluppatore.", "un appassionato di informatica.", "un system administrator.", "assetato di conoscenza."],
+    strings: ["un ragazzo di 15 anni.", "uno sviluppatore.", "un appassionato di informatica.", "un system administrator.", "assetato di conoscenza."],
     typeSpeed: 55,
     backSpeed: 30,
     loop: true
