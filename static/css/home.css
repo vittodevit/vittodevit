@@ -3,15 +3,26 @@
 }
 
 .comp-base{
-    background-color: green;
+    background-color: #AD8A56;
 }
 
 .comp-medie{
-    background-color: goldenrod;
+    background-color: #B4B4B4;
 }
 
 .comp-avanzate{
-    background-color: red;
+    background-color: #C9B037;
+}
+
+.btn-primary{
+    background-color: #C9B037;
+    border-color: #C9B037;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+    background-color: white;
+    background-color: #b8a133;
+    border-color: #b8a133;
 }
 
 .spaziobarre{
@@ -45,4 +56,12 @@
 
 #footer-1{
     padding-bottom: 24px !important;
+}
+
+a{
+    color: #7e7e7e;
+}
+
+a:hover, a:focus, a:active{
+    color: #646464;
 }
