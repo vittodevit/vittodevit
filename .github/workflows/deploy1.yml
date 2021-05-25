@@ -1,0 +1,41 @@
+name: Connect to VPN and deploy on production server
+on: [push]
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      #Install openvpn
+      - name: Install OpenVPN
+        run: sudo apt-get install openvpn
+      #connect
+      - name: Connect to VPN
+        uses: golfzaptw/action-connect-ovpn@master
+        id: connect_vpn
+        with:
+          PING_URL: '10.8.0.1'
+          FILE_OVPN: '.github/vpn/config.ovpn'
+          TLS_KEY: ${{ secrets.TLS_KEY }}
+        env:
+          CA_CRT: ${{ secrets.CA_CRT}}
+          USER_CRT: ${{ secrets.USER_CRT }}
+          USER_KEY: ${{ secrets.USER_KEY }}
+      #check
+      - name: Check VPN connection
+        run: echo ${{ steps.connect_vpn.outputs.STATUS }}
+      #deploy 
+      - name: Deploy files to production
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: ${{ secrets.USERNAME }}
+          server: '10.8.0.1'
+          ssh_private_key: ${{ secrets.SSH_PPK }} 
+          local_path: './*'
+          remote_path: '/var/www/vitto.dev/public-html'
+          args: '-o ConnectTimeout=5'
+      #kill
+      - name: Kill vpn
+        if: always()
+        run: sudo killall openvpn
