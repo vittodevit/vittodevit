@@ -11,7 +11,7 @@ jobs:
       - name: Set Variables
         uses: allenevans/set-env@v2.0.0
         with:
-          OVPN: ${{ secrets.OVPN}}
+          OVPN: ${{ secrets.OVPN }}
       #write vpn files
       - name: Write VPN Files
         run: |
@@ -20,7 +20,6 @@ jobs:
       #install ovpn
       - name: Install OpenVPN
         run: |
-          git remote add deploy $DEPLOY_URL
           sudo apt install apt-transport-https
           sudo wget https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub
           sudo apt-key add openvpn-repo-pkg-key.pub
