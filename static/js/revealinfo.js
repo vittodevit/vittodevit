@@ -2,8 +2,8 @@
 var info = [
  "mailto:hi@vitto.dev",
  "hi@vitto.dev",
- "https://t.me/mrbackslash_it",
- "@mrbackslash_it"
+ "https://t.me/vittodevit",
+ "@vittodevit"
 ];
 document.getElementById("campomail").href = info[0];
 document.getElementById("campomail").innerText = info[1];
