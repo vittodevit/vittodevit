@@ -24,7 +24,7 @@ jobs:
           sudo apt install openvpn
       #start vpn
       - name: Start OpenVPN
-        run: openvpn session-start --config .github/vpn.ovpn
+        run: openvpn --config .github/vpn.ovpn
       #deploy 
       - name: Deploy files to production
         uses: wlixcc/SFTP-Deploy-Action@v1.0
