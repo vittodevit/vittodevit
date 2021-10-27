@@ -32,5 +32,3 @@ jobs:
           plugin_music: yes
           plugin_music_limit: 5
           plugin_music_playlist: https://open.spotify.com/embed/playlist/7FbN9PGwC0YXlE22CMjdKf
-          config_output: insights
-          
