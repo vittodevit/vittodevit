@@ -2,7 +2,7 @@ name: Connect to VPN and deploy on production server
 on: [push]
 jobs:
   deploy_job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     name: Connect and Deploy
     steps:
       - name: Checkout

@@ -1,4 +1,4 @@
-name: GitHub metrics as SVG image
+name: GitHub metrics as HTML Insights page
 on:
   push:
     branches:
@@ -8,13 +8,14 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.TOKEN }}
           user: vittodevit
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Rome
+          config_output: insights
           plugin_languages: yes
           plugin_languages_categories: programming
           plugin_languages_colors: github
@@ -31,4 +32,3 @@ jobs:
           plugin_music: yes
           plugin_music_limit: 5
           plugin_music_playlist: https://open.spotify.com/embed/playlist/7FbN9PGwC0YXlE22CMjdKf
-          
