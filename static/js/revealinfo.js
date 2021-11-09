@@ -11,7 +11,7 @@ document.getElementById("campotelegram").href = info[2];
 document.getElementById("campotelegram").innerText = info[3];
 
 var typed = new Typed('#testoscritto', {
-    strings: ["un ragazzo di 15 anni.", "uno sviluppatore.", "un appassionato di informatica.", "un system administrator.", "assetato di conoscenza."],
+    strings: ["un ragazzo di 16 anni.", "uno sviluppatore.", "un appassionato di informatica.", "un system administrator.", "assetato di conoscenza."],
     typeSpeed: 55,
     backSpeed: 30,
     loop: true
