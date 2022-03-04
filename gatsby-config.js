@@ -3,5 +3,8 @@ module.exports = {
       title: `Vittorio Lo Mele`,
     siteUrl: `https://vitto.dev`
   },
-  plugins: []
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
