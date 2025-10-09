@@ -1,1 +1,1 @@
-[![GitHub metrics](https://raw.githubusercontent.com/vittodevit/vittodevit/metrics-renders/github-metrics.svg)](https://raw.githubusercontent.com/vittodevit/vittodevit/metrics-renders/github-metrics.svg)
+
